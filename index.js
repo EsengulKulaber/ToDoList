@@ -62,7 +62,7 @@ app.post("/ekle", function(req, res){
 app.post("/sil", function(req, res){
     var dokumanID = req.body.id;
     Gorev.deleteOne({ _id : dokumanID }, function(err){
-        res.redirect("/");
+    res.redirect("/");
     })
 });
 let port = process.env.PORT;
